@@ -13,7 +13,8 @@ ADS1115 ADS(0x48);  //I2c address
 #define SW_auto 12
 #define SW_manual 13
 #define SPEEDPOT 0
-#define PUMP 9
+#define PUMP 5 //Stond op 9?
+#define ALERT 8
 #define MANUAL 1
 #define AUTO 2
 #define OFF 0
