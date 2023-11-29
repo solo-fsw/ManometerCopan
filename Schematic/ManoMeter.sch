@@ -2466,57 +2466,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="1X06_SMD_MALE">
-<description>&lt;h3&gt; 6 Pin SMD Male Header&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”http://cdn.sparkfun.com/datasheets/Prototyping/maleSMDheader.pdf”&gt;Datasheet referenced for footprint:&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_06&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-1.27" y1="-1.25" x2="13.97" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="13.97" y1="-1.25" x2="13.97" y2="1.25" width="0.127" layer="51"/>
-<wire x1="13.97" y1="1.25" x2="-1.27" y2="1.25" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="0.64" width="0.127" layer="51"/>
-<circle x="2.54" y="0" radius="0.64" width="0.127" layer="51"/>
-<circle x="5.08" y="0" radius="0.64" width="0.127" layer="51"/>
-<circle x="7.62" y="0" radius="0.64" width="0.127" layer="51"/>
-<circle x="10.16" y="0" radius="0.64" width="0.127" layer="51"/>
-<circle x="12.7" y="0" radius="0.64" width="0.127" layer="51"/>
-<rectangle x1="-0.32" y1="0" x2="0.32" y2="2.75" layer="51"/>
-<rectangle x1="4.76" y1="0" x2="5.4" y2="2.75" layer="51"/>
-<rectangle x1="9.84" y1="0" x2="10.48" y2="2.75" layer="51"/>
-<rectangle x1="2.22" y1="-2.75" x2="2.86" y2="0" layer="51" rot="R180"/>
-<rectangle x1="7.3" y1="-2.75" x2="7.94" y2="0" layer="51" rot="R180"/>
-<rectangle x1="12.38" y1="-2.75" x2="13.02" y2="0" layer="51" rot="R180"/>
-<smd name="1" x="0" y="0" dx="1.02" dy="6" layer="1"/>
-<smd name="2" x="2.54" y="0" dx="1.02" dy="6" layer="1"/>
-<smd name="3" x="5.08" y="0" dx="1.02" dy="6" layer="1"/>
-<smd name="4" x="7.62" y="0" dx="1.02" dy="6" layer="1"/>
-<smd name="5" x="10.16" y="0" dx="1.02" dy="6" layer="1"/>
-<smd name="6" x="12.7" y="0" dx="1.02" dy="6" layer="1"/>
-<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="-1.27" y1="-1.25" x2="-0.635" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="-1.27" y1="1.25" x2="-0.635" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="0.762" y1="1.25" x2="1.778" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="3.302" y1="1.25" x2="4.318" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="5.842" y1="1.25" x2="6.858" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="8.382" y1="1.25" x2="9.398" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="10.922" y1="1.25" x2="11.938" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="1.778" y1="-1.25" x2="0.762" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="4.318" y1="-1.25" x2="3.302" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="6.858" y1="-1.25" x2="5.842" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="9.398" y1="-1.25" x2="8.382" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="11.938" y1="-1.25" x2="10.922" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="13.97" y1="-1.25" x2="13.97" y2="1.25" width="0.1778" layer="21"/>
-<wire x1="13.97" y1="-1.25" x2="13.335" y2="-1.25" width="0.1778" layer="21"/>
-<wire x1="13.97" y1="1.25" x2="13.335" y2="1.25" width="0.1778" layer="21"/>
-<text x="-0.508" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-0.635" y="-3.937" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
 <package name="USB-MINIB">
 <description>&lt;h3&gt;USB Type Mini-B Surface Mounted&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -2548,19 +2497,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="MPS20N0040D-S">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="OUT-" x="-15.24" y="5.08" length="middle"/>
-<pin name="IN+" x="-15.24" y="0" length="middle"/>
-<pin name="OUT+" x="-15.24" y="-5.08" length="middle"/>
-<pin name="IN-" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="OUT-2" x="15.24" y="5.08" length="middle" rot="R180"/>
-<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="USB-5PIN">
 <description>&lt;h3&gt;USB - 5 pin&lt;/h3&gt;
 &lt;p&gt;5 pin USB connector: VBUS, GND, D+, D-, ID &lt;/p&gt;
@@ -2581,25 +2517,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MPS20N0040D-S">
-<gates>
-<gate name="G$1" symbol="MPS20N0040D-S" x="27.94" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="1X06_SMD_MALE">
-<connects>
-<connect gate="G$1" pin="IN+" pad="2"/>
-<connect gate="G$1" pin="IN-" pad="5"/>
-<connect gate="G$1" pin="OUT+" pad="3"/>
-<connect gate="G$1" pin="OUT-" pad="1"/>
-<connect gate="G$1" pin="OUT-2" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="USB_MINI-B" prefix="J">
 <description>&lt;h3&gt;USB type Mini-B Connector&lt;/h3&gt;
 &lt;p&gt;Breaks out 5th pin, and includes shield pins if needed.&lt;/p&gt;
@@ -16379,6 +16296,93 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MPXH6115AC6U">
+<description>&lt;Board Mount Pressure Sensors 16.7psi 115kPA Pressure Sensor&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="MPXH6115AC6U">
+<description>&lt;b&gt;MPXH6115AC6U-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="0" y="0" dx="1.35" dy="0.69" layer="1"/>
+<smd name="2" x="0" y="1.27" dx="1.35" dy="0.69" layer="1"/>
+<smd name="3" x="0" y="2.54" dx="1.35" dy="0.69" layer="1"/>
+<smd name="4" x="0" y="3.81" dx="1.35" dy="0.69" layer="1"/>
+<smd name="5" x="-9.83" y="3.81" dx="1.35" dy="0.69" layer="1"/>
+<smd name="6" x="-9.83" y="2.54" dx="1.35" dy="0.69" layer="1"/>
+<smd name="7" x="-9.83" y="1.27" dx="1.35" dy="0.69" layer="1"/>
+<smd name="8" x="-9.83" y="0" dx="1.35" dy="0.69" layer="1"/>
+<text x="-4.603" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-4.603" y="1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-9.165" y1="6.155" x2="-0.665" y2="6.155" width="0.2" layer="51"/>
+<wire x1="-0.665" y1="6.155" x2="-0.665" y2="-2.345" width="0.2" layer="51"/>
+<wire x1="-0.665" y1="-2.345" x2="-9.165" y2="-2.345" width="0.2" layer="51"/>
+<wire x1="-9.165" y1="-2.345" x2="-9.165" y2="6.155" width="0.2" layer="51"/>
+<wire x1="-9.165" y1="6.155" x2="-0.665" y2="6.155" width="0.1" layer="21"/>
+<wire x1="-0.665" y1="6.155" x2="-0.665" y2="-2.345" width="0.1" layer="21"/>
+<wire x1="-0.665" y1="-2.345" x2="-9.165" y2="-2.345" width="0.1" layer="21"/>
+<wire x1="-9.165" y1="-2.345" x2="-9.165" y2="6.155" width="0.1" layer="21"/>
+<wire x1="-11.505" y1="7.155" x2="2.3" y2="7.155" width="0.1" layer="51"/>
+<wire x1="2.3" y1="7.155" x2="2.3" y2="-3.345" width="0.1" layer="51"/>
+<wire x1="2.3" y1="-3.345" x2="-11.505" y2="-3.345" width="0.1" layer="51"/>
+<wire x1="-11.505" y1="-3.345" x2="-11.505" y2="7.155" width="0.1" layer="51"/>
+<wire x1="1.2" y1="-1.5" x2="1.2" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="1.2" y1="-1.5" x2="1.3" y2="-1.5" width="0.1" layer="21" curve="180"/>
+<wire x1="1.3" y1="-1.5" x2="1.3" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="1.3" y1="-1.5" x2="1.2" y2="-1.5" width="0.1" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPXH6115AC6U">
+<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-10.16" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="DNC_1" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="VS" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="VOUT" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="DNC_2" x="0" y="0" length="middle"/>
+<pin name="DNC_3" x="0" y="-2.54" length="middle"/>
+<pin name="DNC_4" x="0" y="-5.08" length="middle"/>
+<pin name="DNC_5" x="0" y="-7.62" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPXH6115AC6U" prefix="IC">
+<description>&lt;b&gt;Board Mount Pressure Sensors 16.7psi 115kPA Pressure Sensor&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.nxp.com/docs/en/data-sheet/MPXA6115A.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MPXH6115AC6U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MPXH6115AC6U">
+<connects>
+<connect gate="G$1" pin="DNC_1" pad="1"/>
+<connect gate="G$1" pin="DNC_2" pad="5"/>
+<connect gate="G$1" pin="DNC_3" pad="6"/>
+<connect gate="G$1" pin="DNC_4" pad="7"/>
+<connect gate="G$1" pin="DNC_5" pad="8"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
+<connect gate="G$1" pin="VS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Board Mount Pressure Sensors 16.7psi 115kPA Pressure Sensor" constant="no"/>
+<attribute name="FARNELL_PART_NUMBER" value="" constant="no"/>
+<attribute name="FARNELL_PRICE-STOCK" value="" constant="no"/>
+<attribute name="HEIGHT" value="9.906mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="NXP" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MPXH6115AC6U" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16400,7 +16404,6 @@ high speed (Philips)</description>
 <part name="S1" library="switch" deviceset="TL38PO" device="" value="Manual/Off/Auto"/>
 <part name="R1" library="pot" deviceset="TRIM_EU-" device="B25P" value="10K"/>
 <part name="Q1" library="transistor-power" deviceset="N-MOSFET_SYMBOL" device=""/>
-<part name="IC1" library="SparkFun-Connectors" deviceset="MPS20N0040D-S" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device="" value="+12V"/>
@@ -16461,10 +16464,6 @@ high speed (Philips)</description>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="4K7"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="M0805" value="4K7"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="4K7"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C1210" value="10u">
-<attribute name="FABRIKANTNO" value="GRM32ER61A106KA01L"/>
-<attribute name="FARNELL" value=""/>
-</part>
 <part name="P+1" library="supply1" deviceset="+5V" device="" value="+5V AVDD"/>
 <part name="P+2" library="supply1" deviceset="+5V" device="" value="+5V AVDD"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1210" value="10u">
@@ -16480,6 +16479,12 @@ high speed (Philips)</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device="" value="+5V AVDD"/>
+<part name="IC5" library="MPXH6115AC6U" deviceset="MPXH6115AC6U" device=""/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="47p">
+<attribute name="FARNELL" value="1759489"/>
+</part>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="51K"/>
 </parts>
 <sheets>
 <sheet>
@@ -16494,7 +16499,6 @@ high speed (Philips)</description>
 <instance part="Q1" gate="G$1" x="271.78" y="129.54" smashed="yes">
 <attribute name="NAME" x="269.24" y="134.62" size="1.778" layer="95"/>
 </instance>
-<instance part="IC1" gate="G$1" x="345.44" y="205.74"/>
 <instance part="GND3" gate="1" x="238.76" y="165.1"/>
 <instance part="X1" gate="-1" x="279.4" y="144.78"/>
 <instance part="X1" gate="-2" x="279.4" y="142.24"/>
@@ -16568,10 +16572,6 @@ high speed (Philips)</description>
 <instance part="R4" gate="G$1" x="228.6" y="223.52" rot="R90"/>
 <instance part="R5" gate="G$1" x="233.68" y="223.52" rot="R90"/>
 <instance part="R6" gate="G$1" x="238.76" y="223.52" rot="R90"/>
-<instance part="C1" gate="G$1" x="365.76" y="91.44">
-<attribute name="FABRIKANTNO" x="365.76" y="91.44" size="1.778" layer="96" display="off"/>
-<attribute name="FARNELL" x="365.76" y="91.44" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="P+1" gate="1" x="320.04" y="243.84"/>
 <instance part="P+2" gate="1" x="365.76" y="104.14"/>
 <instance part="C2" gate="G$1" x="322.58" y="91.44">
@@ -16584,12 +16584,21 @@ high speed (Philips)</description>
 </instance>
 <instance part="FB1" gate="G$1" x="332.74" y="96.52"/>
 <instance part="FB2" gate="G$1" x="332.74" y="83.82"/>
-<instance part="SUPPLY3" gate="G$1" x="342.9" y="182.88"/>
+<instance part="SUPPLY3" gate="G$1" x="325.12" y="160.02"/>
 <instance part="SUPPLY4" gate="G$1" x="342.9" y="78.74"/>
 <instance part="SUPPLY5" gate="G$1" x="365.76" y="78.74"/>
 <instance part="GND1" gate="1" x="322.58" y="78.74"/>
 <instance part="SUPPLY6" gate="+5V" x="322.58" y="104.14"/>
 <instance part="P+3" gate="1" x="342.9" y="104.14"/>
+<instance part="IC5" gate="G$1" x="360.68" y="205.74" rot="R180"/>
+<instance part="C1" gate="G$1" x="365.76" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="367.284" y="91.821" size="1.778" layer="95"/>
+<attribute name="VALUE" x="367.284" y="86.741" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="299.72" y="170.18">
+<attribute name="FARNELL" x="299.72" y="170.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="292.1" y="170.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16600,24 +16609,6 @@ high speed (Philips)</description>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="276.86" y1="144.78" x2="274.32" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="144.78" x2="274.32" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="OUT-"/>
-<wire x1="330.2" y1="210.82" x2="327.66" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="210.82" x2="320.04" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="OUT-2"/>
-<wire x1="360.68" y1="210.82" x2="368.3" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="210.82" x2="368.3" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="218.44" x2="327.66" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="218.44" x2="327.66" y2="210.82" width="0.1524" layer="91"/>
-<junction x="327.66" y="210.82"/>
-<wire x1="320.04" y1="210.82" x2="320.04" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="177.8" x2="269.24" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="177.8" x2="269.24" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="A" pin="AIN2"/>
-<wire x1="269.24" y1="208.28" x2="276.86" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16890,18 +16881,19 @@ high speed (Philips)</description>
 <wire x1="312.42" y1="220.98" x2="317.5" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="220.98" x2="317.5" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="233.68" x2="320.04" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IN+"/>
 <wire x1="320.04" y1="233.68" x2="317.5" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="205.74" x2="322.58" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="205.74" x2="322.58" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="320.04" y1="233.68" x2="320.04" y2="241.3" width="0.1524" layer="91"/>
 <junction x="320.04" y="233.68"/>
+<pinref part="IC5" gate="G$1" pin="VS"/>
+<wire x1="330.2" y1="210.82" x2="317.5" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="210.82" x2="317.5" y2="220.98" width="0.1524" layer="91"/>
+<junction x="317.5" y="220.98"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="365.76" y1="93.98" x2="365.76" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -17089,34 +17081,29 @@ high speed (Philips)</description>
 <junction x="228.6" y="198.12"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="OUT+"/>
-<wire x1="330.2" y1="200.66" x2="322.58" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="200.66" x2="322.58" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="175.26" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="175.26" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="A" pin="AIN3"/>
-<wire x1="271.78" y1="205.74" x2="276.86" y2="205.74" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="AGND" class="0">
 <segment>
-<pinref part="IC4" gate="A" pin="GND"/>
-<wire x1="312.42" y1="190.5" x2="314.96" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="190.5" x2="314.96" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IN-"/>
-<wire x1="360.68" y1="205.74" x2="368.3" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="205.74" x2="368.3" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="185.42" x2="342.9" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
-<wire x1="342.9" y1="185.42" x2="368.3" y2="185.42" width="0.1524" layer="91"/>
-<junction x="342.9" y="185.42"/>
+<pinref part="IC5" gate="G$1" pin="GND"/>
+<wire x1="330.2" y1="208.28" x2="325.12" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="208.28" x2="325.12" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="A" pin="GND"/>
+<wire x1="325.12" y1="190.5" x2="325.12" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="190.5" x2="325.12" y2="190.5" width="0.1524" layer="91"/>
+<junction x="325.12" y="190.5"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="292.1" y1="165.1" x2="292.1" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="162.56" x2="299.72" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="162.56" x2="325.12" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="165.1" x2="299.72" y2="162.56" width="0.1524" layer="91"/>
+<junction x="299.72" y="162.56"/>
+<junction x="325.12" y="162.56"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="365.76" y1="86.36" x2="365.76" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="AGND"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -17126,6 +17113,24 @@ high speed (Philips)</description>
 <wire x1="342.9" y1="83.82" x2="342.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="83.82" x2="342.9" y2="83.82" width="0.1524" layer="91"/>
 <junction x="342.9" y="83.82"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="IC4" gate="A" pin="AIN3"/>
+<wire x1="271.78" y1="205.74" x2="276.86" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="175.26" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="175.26" x2="292.1" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="205.74" x2="320.04" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="VOUT"/>
+<wire x1="320.04" y1="205.74" x2="330.2" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="175.26" x2="299.72" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="175.26" x2="320.04" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="172.72" x2="299.72" y2="175.26" width="0.1524" layer="91"/>
+<junction x="292.1" y="175.26"/>
+<junction x="299.72" y="175.26"/>
 </segment>
 </net>
 </nets>

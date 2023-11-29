@@ -1359,6 +1359,57 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="1X06_SMD_MALE">
+<description>&lt;h3&gt; 6 Pin SMD Male Header&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://cdn.sparkfun.com/datasheets/Prototyping/maleSMDheader.pdf”&gt;Datasheet referenced for footprint:&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_06&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.25" x2="13.97" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-1.25" x2="13.97" y2="1.25" width="0.127" layer="51"/>
+<wire x1="13.97" y1="1.25" x2="-1.27" y2="1.25" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="5.08" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="7.62" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="10.16" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="12.7" y="0" radius="0.64" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="0" x2="0.32" y2="2.75" layer="51"/>
+<rectangle x1="4.76" y1="0" x2="5.4" y2="2.75" layer="51"/>
+<rectangle x1="9.84" y1="0" x2="10.48" y2="2.75" layer="51"/>
+<rectangle x1="2.22" y1="-2.75" x2="2.86" y2="0" layer="51" rot="R180"/>
+<rectangle x1="7.3" y1="-2.75" x2="7.94" y2="0" layer="51" rot="R180"/>
+<rectangle x1="12.38" y1="-2.75" x2="13.02" y2="0" layer="51" rot="R180"/>
+<smd name="1" x="0" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="2" x="2.54" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="3" x="5.08" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="4" x="7.62" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="5" x="10.16" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="6" x="12.7" y="0" dx="1.02" dy="6" layer="1"/>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="-1.25" x2="-0.635" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="1.25" x2="-0.635" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="0.762" y1="1.25" x2="1.778" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="3.302" y1="1.25" x2="4.318" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="5.842" y1="1.25" x2="6.858" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="8.382" y1="1.25" x2="9.398" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="10.922" y1="1.25" x2="11.938" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="1.778" y1="-1.25" x2="0.762" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="4.318" y1="-1.25" x2="3.302" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="6.858" y1="-1.25" x2="5.842" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="9.398" y1="-1.25" x2="8.382" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="11.938" y1="-1.25" x2="10.922" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="13.97" y1="-1.25" x2="13.97" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="13.97" y1="-1.25" x2="13.335" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="13.97" y1="1.25" x2="13.335" y2="1.25" width="0.1778" layer="21"/>
+<text x="-0.508" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-0.635" y="-3.937" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 <package name="USB-MINIB">
 <description>&lt;h3&gt;USB Type Mini-B Surface Mounted&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -1770,42 +1821,6 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 </package>
 </packages>
 </library>
-<library name="MPXH6115AC6U">
-<description>&lt;Board Mount Pressure Sensors 16.7psi 115kPA Pressure Sensor&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="MPXH6115AC6U">
-<description>&lt;b&gt;MPXH6115AC6U-1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="0" y="0" dx="1.35" dy="0.69" layer="1"/>
-<smd name="2" x="0" y="1.27" dx="1.35" dy="0.69" layer="1"/>
-<smd name="3" x="0" y="2.54" dx="1.35" dy="0.69" layer="1"/>
-<smd name="4" x="0" y="3.81" dx="1.35" dy="0.69" layer="1"/>
-<smd name="5" x="-9.83" y="3.81" dx="1.35" dy="0.69" layer="1"/>
-<smd name="6" x="-9.83" y="2.54" dx="1.35" dy="0.69" layer="1"/>
-<smd name="7" x="-9.83" y="1.27" dx="1.35" dy="0.69" layer="1"/>
-<smd name="8" x="-9.83" y="0" dx="1.35" dy="0.69" layer="1"/>
-<text x="-4.603" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-4.603" y="1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-9.165" y1="6.155" x2="-0.665" y2="6.155" width="0.2" layer="51"/>
-<wire x1="-0.665" y1="6.155" x2="-0.665" y2="-2.345" width="0.2" layer="51"/>
-<wire x1="-0.665" y1="-2.345" x2="-9.165" y2="-2.345" width="0.2" layer="51"/>
-<wire x1="-9.165" y1="-2.345" x2="-9.165" y2="6.155" width="0.2" layer="51"/>
-<wire x1="-9.165" y1="6.155" x2="-0.665" y2="6.155" width="0.1" layer="21"/>
-<wire x1="-0.665" y1="6.155" x2="-0.665" y2="-2.345" width="0.1" layer="21"/>
-<wire x1="-0.665" y1="-2.345" x2="-9.165" y2="-2.345" width="0.1" layer="21"/>
-<wire x1="-9.165" y1="-2.345" x2="-9.165" y2="6.155" width="0.1" layer="21"/>
-<wire x1="-11.505" y1="7.155" x2="2.3" y2="7.155" width="0.1" layer="51"/>
-<wire x1="2.3" y1="7.155" x2="2.3" y2="-3.345" width="0.1" layer="51"/>
-<wire x1="2.3" y1="-3.345" x2="-11.505" y2="-3.345" width="0.1" layer="51"/>
-<wire x1="-11.505" y1="-3.345" x2="-11.505" y2="7.155" width="0.1" layer="51"/>
-<wire x1="1.2" y1="-1.5" x2="1.2" y2="-1.5" width="0.1" layer="21"/>
-<wire x1="1.2" y1="-1.5" x2="1.3" y2="-1.5" width="0.1" layer="21" curve="180"/>
-<wire x1="1.3" y1="-1.5" x2="1.3" y2="-1.5" width="0.1" layer="21"/>
-<wire x1="1.3" y1="-1.5" x2="1.2" y2="-1.5" width="0.1" layer="21" curve="180"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2021,6 +2036,7 @@ design rules under a new name.</description>
 <element name="C25" library="rcl" package="C0805" value="100N" x="-55.88" y="49.53"/>
 <element name="C26" library="rcl" package="C0805" value="100N" x="-16.51" y="58.42"/>
 <element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="-31.75" y="49.53"/>
+<element name="IC1" library="SparkFun-Connectors" package="1X06_SMD_MALE" value="MPS20N0040D-S" x="-34.29" y="39.37"/>
 <element name="IC2" library="avr" package="TQFP32-08" value="ATMEGA328P-32PIN-AU" x="-36.83" y="24.13">
 <attribute name="FARNELL" value="1972086" x="-36.83" y="24.13" size="1.778" layer="27" display="off"/>
 </element>
@@ -2072,6 +2088,10 @@ design rules under a new name.</description>
 <element name="R4" library="rcl" package="M0805" value="4K7" x="-64.77" y="-13.97"/>
 <element name="R5" library="rcl" package="M0805" value="4K7" x="-64.77" y="-20.32"/>
 <element name="R6" library="rcl" package="M0805" value="4K7" x="-64.77" y="-26.67"/>
+<element name="C1" library="rcl" package="C1210" value="10u" x="-73.66" y="-24.13">
+<attribute name="FABRIKANTNO" value="GRM32ER61A106KA01L" x="-73.66" y="-24.13" size="1.778" layer="27" display="off"/>
+<attribute name="FARNELL" value="" x="-73.66" y="-24.13" size="1.778" layer="27" display="off"/>
+</element>
 <element name="C2" library="rcl" package="C1210" value="10u" x="-82.55" y="-24.13">
 <attribute name="FABRIKANTNO" value="GRM32ER61A106KA01L" x="-82.55" y="-24.13" size="1.778" layer="27" display="off"/>
 <attribute name="FARNELL" value="" x="-82.55" y="-24.13" size="1.778" layer="27" display="off"/>
@@ -2079,23 +2099,17 @@ design rules under a new name.</description>
 <element name="C3" library="rcl" package="C0805" value="100n" x="-82.55" y="-33.02"/>
 <element name="FB1" library="microbuilder" package="0805" value="MMZ2012Y152B" x="-82.55" y="-39.37"/>
 <element name="FB2" library="microbuilder" package="0805" value="MMZ2012Y152B" x="-82.55" y="-44.45"/>
-<element name="IC5" library="MPXH6115AC6U" package="MPXH6115AC6U" value="MPXH6115AC6U" x="-72.39" y="-54.61">
-<attribute name="HEIGHT" value="9.906mm" x="-72.39" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="MPXH6115AC6U" x="-72.39" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="FARNELL_PART_NUMBER" value="" x="-72.39" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="Board Mount Pressure Sensors 16.7psi 115kPA Pressure Sensor" x="-72.39" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="FARNELL_PRICE-STOCK" value="" x="-72.39" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="NXP" x="-72.39" y="-54.61" size="1.778" layer="27" display="off"/>
-</element>
-<element name="C1" library="rcl" package="C0805" value="100n" x="-82.55" y="-62.23"/>
-<element name="C4" library="rcl" package="C0805" value="47p" x="-82.55" y="-68.58">
-<attribute name="FARNELL" value="1759489" x="-82.55" y="-68.58" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R7" library="rcl" package="M0805" value="51K" x="-82.55" y="-74.93"/>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="X1" pad="1"/>
+</signal>
+<signal name="N$3">
+<contactref element="IC1" pad="1"/>
+<contactref element="IC1" pad="6"/>
+<contactref element="IC4" pad="6"/>
+<wire x1="-34.29" y1="39.37" x2="-61.35" y2="-8.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.59" y1="39.37" x2="-34.29" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="IC2" pad="28"/>
@@ -2207,19 +2221,18 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R6" pad="2"/>
+<contactref element="IC1" pad="2"/>
 <contactref element="IC4" pad="8"/>
+<contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
 <contactref element="FB1" pad="1"/>
 <contactref element="C3" pad="2"/>
 <contactref element="FB1" pad="2"/>
-<contactref element="IC5" pad="2"/>
-<contactref element="C1" pad="2"/>
-<wire x1="-72.39" y1="-53.34" x2="-81.6" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-81.6" y1="-39.37" x2="-72.39" y2="-53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.5" y1="-39.37" x2="-81.6" y2="-39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.6" y1="-39.37" x2="-83.5" y2="-39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.6" y1="-33.02" x2="-81.6" y2="-39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.95" y1="-24.13" x2="-81.6" y2="-33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-63.82" y1="-26.67" x2="-81.6" y2="-33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-75.06" y1="-24.13" x2="-83.95" y2="-24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-63.82" y1="-26.67" x2="-75.06" y2="-24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="-63.82" y1="-20.32" x2="-63.82" y2="-26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-63.82" y1="-13.97" x2="-63.82" y2="-20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.35" y1="-7.62" x2="-63.82" y2="-13.97" width="0" layer="19" extent="1-1"/>
@@ -2227,6 +2240,8 @@ design rules under a new name.</description>
 <wire x1="-41.335" y1="22.93" x2="-44.24" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.335" y1="24.53" x2="-41.335" y2="22.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.45" y1="41.91" x2="-41.335" y2="24.53" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.75" y1="39.37" x2="-44.45" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="40.64" x2="-31.75" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.55" y1="38.1" x2="-44.45" y2="41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.69" y1="58.42" x2="-44.45" y2="41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.61" y1="58.42" x2="-39.69" y2="58.42" width="0" layer="19" extent="1-1"/>
@@ -2235,7 +2250,6 @@ design rules under a new name.</description>
 <wire x1="-28.26" y1="58.42" x2="-29.718" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.91" y1="58.42" x2="-28.26" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.705" y1="58.42" x2="-39.69" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.05" y1="40.64" x2="-21.91" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="C25" pad="1"/>
@@ -2329,29 +2343,21 @@ design rules under a new name.</description>
 <wire x1="-65.65" y1="-7.12" x2="-65.72" y2="-13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.83" y1="28.635" x2="-65.65" y2="-7.12" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="N$2">
+<contactref element="IC1" pad="3"/>
+<contactref element="IC4" pad="7"/>
+<wire x1="-29.21" y1="39.37" x2="-61.35" y2="-8.12" width="0" layer="19" extent="1-1"/>
+</signal>
 <signal name="AGND">
+<contactref element="IC4" pad="3"/>
+<contactref element="IC1" pad="5"/>
+<contactref element="C1" pad="2"/>
 <contactref element="C3" pad="1"/>
 <contactref element="FB2" pad="2"/>
-<contactref element="IC5" pad="3"/>
-<contactref element="IC4" pad="3"/>
-<contactref element="C1" pad="1"/>
-<contactref element="R7" pad="1"/>
-<contactref element="C4" pad="2"/>
-<wire x1="-81.6" y1="-68.58" x2="-83.5" y2="-74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.5" y1="-62.23" x2="-81.6" y2="-68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-72.39" y1="-52.07" x2="-83.5" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-81.6" y1="-44.45" x2="-72.39" y2="-52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.5" y1="-33.02" x2="-81.6" y2="-44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-65.65" y1="-7.62" x2="-83.5" y2="-33.02" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="IC4" pad="7"/>
-<contactref element="R7" pad="2"/>
-<contactref element="IC5" pad="4"/>
-<contactref element="C4" pad="1"/>
-<wire x1="-83.5" y1="-68.58" x2="-81.6" y2="-74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="-72.39" y1="-50.8" x2="-83.5" y2="-68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-61.35" y1="-8.12" x2="-72.39" y2="-50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.26" y1="-24.13" x2="-83.5" y2="-33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.65" y1="-7.62" x2="-72.26" y2="-24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.13" y1="39.37" x2="-65.65" y2="-7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
