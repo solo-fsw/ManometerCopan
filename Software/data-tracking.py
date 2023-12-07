@@ -2,9 +2,11 @@
 import serial
 import re
 from serial.tools.list_ports import comports
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 import numpy as np
+import time
+import tkinter
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib import pyplot as plt, animation
 import time
 
 # ===================================================================
@@ -26,20 +28,21 @@ def modified_relu(val):
         return 50
 
 def plot_data(i, t_array, p_array, s_array, serial_object, axis):
-    # Read the data from the serial object
+    
     while True:
         try:
-            serial_object.read_all()
-            buffer = ";"
-            while buffer[-1] != "\n":
-                buffer += serial_object.read().decode()
-            rel_time, mode, speed, pressure = [x.strip() for x in buffer.split(";")[1:]]
-            break
-        except:
+            data = serial_object.read_all().decode()
+            complete_line = data.split("\n")[-2]
+            line = complete_line.split(";")
+            if len(line) == 4:
+                rel_time, mode, speed, pressure = [x.strip() for x in line]
+                break
+        except IndexError:
+            time.sleep(0.01)
             continue
-    
-    if saving:
-        with open("./recording.csv", "a") as fo:
+        
+    if SAVING:
+        with open(f"./{DATA_NAME}.csv", "a") as fo:
             fo.write(f"{rel_time}, {mode}, {speed}, {pressure}\n")
             fo.close()
     
@@ -61,16 +64,7 @@ def plot_data(i, t_array, p_array, s_array, serial_object, axis):
     axis.plot(t_array, s_array, label="Pump activity")
     axis.legend(loc='lower left')
     
-# ===================================================================
-# File execution
-if __name__ == "__main__":
-    import tkinter
-    from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-    from matplotlib import pyplot as plt, animation
-    
-    INTERVAL = 50
-    START = time.time()
-    
+def main():
     plt.rcParams["figure.figsize"] = [7.00, 3.50]
     plt.rcParams["figure.autolayout"] = True
 
@@ -87,17 +81,19 @@ if __name__ == "__main__":
 
     button = tkinter.Button(master=root, text="Quit", command=root.quit)
     button.pack(side=tkinter.BOTTOM)
-    
-    saving = False
-    
+        
     def save_data():
-        global saving; saving = True
-        fo = open("./recording.csv", "w")
+        global DATA_NAME
+        DATA_NAME = tkinter.simpledialog.askstring("Document name", "Please provide a name for the .csv file.")
+        if not DATA_NAME:
+            DATA_NAME = "recording"
+        fo = open(f"./{DATA_NAME}.csv", "w")
         fo.write(f"timestamp, pump_mode, pump_speed, pressure\n")
         fo.close()
+        global SAVING; SAVING = True
         
     def stop_data():
-        global saving; saving = False
+        global SAVING; SAVING = False
     
     button2 = tkinter.Button(master = root, text = "Record", command=save_data)
     button2.pack(side = tkinter.BOTTOM)
@@ -106,7 +102,15 @@ if __name__ == "__main__":
     button3.pack(side = tkinter.BOTTOM)
 
     canvas.get_tk_widget().pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
-    # TODO: Choose corret interval
     ani = animation.FuncAnimation(fig, plot_data, fargs=(t_array, p_array, s_array, serial_object, ax), interval = INTERVAL, cache_frame_data=False)
 
     tkinter.mainloop()
+    
+# ===================================================================
+# File execution
+if __name__ == "__main__":
+    SAVING = False
+    INTERVAL = 50
+    START = time.time()
+
+    main()
