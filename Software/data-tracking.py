@@ -54,7 +54,7 @@ def plot_data(i, t_array, p_array, s_array, serial_object, axis):
     elif mode == "T":
         s_array.append(int(speed))
     
-    t_array = t_array[-100:]  # TODO: Choose optimal amount
+    t_array = t_array[-100:]
     p_array = p_array[-100:]
     s_array = s_array[-100:]
     
