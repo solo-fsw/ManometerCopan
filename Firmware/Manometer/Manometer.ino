@@ -1,19 +1,17 @@
 /*  Pressure Sensor to measure suction and controle pump
-    University Leiden Fsw-Solo Evert 2022
+    University Leiden Fsw-Solo Evert and Jens
 
    20221116 1.0 Beta test hardware concept. 
 */
-  
 
-
+// Definitions // ================================================================
 #include "ADS1X15.h"  //https://github.com/RobTillaart/ADS1X15
-
 
 ADS1115 ADS(0x48);  //I2c address
 #define SW_auto 12
 #define SW_manual 13
 #define SPEEDPOT 0
-#define PUMP 5 //Stond op 9?
+#define PUMP 5
 #define ALERT 8
 #define MANUAL 1
 #define AUTO 2
@@ -27,6 +25,7 @@ boolean PumpIsRunning = false;
 unsigned long StartTime = 0;
 String Pumping = "U" ;
 
+// Setup // ================================================================
 void setup()
 {
   pinMode(SW_manual, INPUT_PULLUP);
@@ -40,7 +39,7 @@ void setup()
   ZeroOffset = CalibrateZero();
 }
 
-
+// Loop // ================================================================
 void loop()
 {
   int PressureValue = ADS.readADC_Differential_2_3();
@@ -85,9 +84,9 @@ void loop()
     default:
       break;
   }
-
 }
 
+// Helper functions // ================================================================
 byte checkswitch() {
   if (digitalRead(SW_manual) == false) {
     return MANUAL;

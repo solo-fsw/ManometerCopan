@@ -18,7 +18,9 @@ def serial_connection():
     raise ConnectionError("No valid connection to the manometer found!")
 
 def modified_relu(val):
-    if val > 0:
+    if val > 1750:
+        return 1700
+    elif val > 50:
         return val
     else:
         return 50
@@ -54,7 +56,7 @@ def plot_data(i, t_array, p_array, s_array, serial_object, axis):
     s_array = s_array[-100:]
     
     axis.clear()
-    axis.set_ylim(0, 1750)  # TODO: Scale appropriately
+    axis.set_ylim(0, 1750)
     axis.plot(t_array, p_array, label="Pressure")
     axis.plot(t_array, s_array, label="Pump activity")
     axis.legend(loc='lower left')
