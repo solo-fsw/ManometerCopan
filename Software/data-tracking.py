@@ -31,19 +31,23 @@ def plot_data(i, t_array, p_array, s_array, serial_object, axis):
             buffer = ";"
             while buffer[-1] != "\n":
                 buffer += serial_object.read().decode()
-            rel_time, speed, pressure = [x.strip() for x in buffer.split(";")[1:]]
+            rel_time, mode, speed, pressure = [x.strip() for x in buffer.split(";")[1:]]
             break
         except:
             continue
     
     if saving:
         with open("./recording.csv", "a") as fo:
-            fo.write(f"{rel_time}, {speed}, {pressure}\n")
+            fo.write(f"{rel_time}, {mode}, {speed}, {pressure}\n")
             fo.close()
     
     t_array.append((time.time() - START))
     p_array.append(modified_relu(float(pressure)))
-    s_array.append(SPEED_MAPPING[speed])
+    
+    if mode == "U" or mode == "F":
+        s_array.append(0)
+    elif mode == "T":
+        s_array.append(int(speed))
     
     t_array = t_array[-100:]  # TODO: Choose optimal amount
     p_array = p_array[-100:]
@@ -64,7 +68,6 @@ if __name__ == "__main__":
     
     INTERVAL = 50
     START = time.time()
-    SPEED_MAPPING = {"U": 1700/2, "T": 1700, "F": 50}
     
     plt.rcParams["figure.figsize"] = [7.00, 3.50]
     plt.rcParams["figure.autolayout"] = True
@@ -88,7 +91,7 @@ if __name__ == "__main__":
     def save_data():
         global saving; saving = True
         fo = open("./recording.csv", "w")
-        fo.write(f"timestamp, pump_speed, pressure\n")
+        fo.write(f"timestamp, pump_mode, pump_speed, pressure\n")
         fo.close()
         
     def stop_data():

@@ -48,6 +48,8 @@ void loop()
   Serial.print(";");
   Serial.print(Pumping);
   Serial.print(";");
+  Serial.print(analogRead(SPEEDPOT) >> 2);
+  Serial.print(";");
   Serial.println(PressureValue);
 
   switch (checkswitch()) {
@@ -58,7 +60,8 @@ void loop()
      PumpPwm(analogRead(SPEEDPOT) >> 2);
       break;
     case AUTO:
-      if ((PressureValue < ZeroOffset - LOWERBOUNDERY) || (PressureValue > ZeroOffset + UPPERBOUNDERY)) {
+      // if ((PressureValue < ZeroOffset - LOWERBOUNDERY) || (PressureValue > ZeroOffset + UPPERBOUNDERY)) {
+        if (PressureValue < ZeroOffset - LOWERBOUNDERY) {
         StartTime = millis();
         if (PumpIsRunning == false) {
           PumpIsRunning = true;
