@@ -4,6 +4,8 @@ import re
 from serial.tools.list_ports import comports
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import numpy as np
+import time
 
 # ===================================================================
 # Helper functions
@@ -15,10 +17,17 @@ def serial_connection():
                 return serial_object
     raise ConnectionError("No valid connection to the manometer found!")
 
-def plot_data(i, t_array, p_array, serial_object, axis):
+def modified_relu(val):
+    if val > 0:
+        return val
+    else:
+        return 50
+
+def plot_data(i, t_array, p_array, s_array, serial_object, axis):
     # Read the data from the serial object
     while True:
         try:
+            serial_object.read_all()
             buffer = ";"
             while buffer[-1] != "\n":
                 buffer += serial_object.read().decode()
@@ -30,32 +39,37 @@ def plot_data(i, t_array, p_array, serial_object, axis):
     if saving:
         with open("./recording.csv", "a") as fo:
             fo.write(f"{rel_time}, {speed}, {pressure}\n")
+            fo.close()
     
-    t_array.append(rel_time)
-    p_array.append(float(pressure))
+    t_array.append((time.time() - START))
+    p_array.append(modified_relu(float(pressure)))
+    s_array.append(SPEED_MAPPING[speed])
     
-    t_array = t_array[-30:]
-    p_array = p_array[-30:]
+    t_array = t_array[-100:]  # TODO: Choose optimal amount
+    p_array = p_array[-100:]
+    s_array = s_array[-100:]
     
     axis.clear()
-    axis.plot(t_array, p_array)
+    axis.set_ylim(0, 1750)  # TODO: Scale appropriately
+    axis.plot(t_array, p_array, label="Pressure")
+    axis.plot(t_array, s_array, label="Pump activity")
+    axis.legend(loc='lower left')
     
-    plt.xticks(rotation=45, ha='right')
-    plt.subplots_adjust(bottom=0.30)
-    plt.title('Manometer pressure over time')
-    plt.ylabel('Pressure over time')
-
 # ===================================================================
 # File execution
 if __name__ == "__main__":
     import tkinter
     from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
     from matplotlib import pyplot as plt, animation
-
+    
+    INTERVAL = 50
+    START = time.time()
+    SPEED_MAPPING = {"U": 1700/2, "T": 1700, "F": 50}
+    
     plt.rcParams["figure.figsize"] = [7.00, 3.50]
     plt.rcParams["figure.autolayout"] = True
 
-    t_array, p_array = list(), list()
+    t_array, p_array, s_array = list(), list(), list()
     serial_object = serial_connection()
 
     root = tkinter.Tk()
@@ -87,6 +101,7 @@ if __name__ == "__main__":
     button3.pack(side = tkinter.BOTTOM)
 
     canvas.get_tk_widget().pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
-    ani = animation.FuncAnimation(fig, plot_data, fargs=(t_array, p_array, serial_object, ax), interval = 1000)
+    # TODO: Choose corret interval
+    ani = animation.FuncAnimation(fig, plot_data, fargs=(t_array, p_array, s_array, serial_object, ax), interval = INTERVAL, cache_frame_data=False)
 
     tkinter.mainloop()
