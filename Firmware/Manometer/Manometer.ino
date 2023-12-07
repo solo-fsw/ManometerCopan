@@ -54,47 +54,39 @@ void loop()
 
   switch (checkswitch()) {
     case OFF:
-      PumpPwm( 0);
+      analogWrite(PUMP, 0);
+      Pumping = "F";
       break;
     case MANUAL:
-     PumpPwm(analogRead(SPEEDPOT) >> 2);
+     analogWrite(PUMP, analogRead(SPEEDPOT) >> 2);
+     Pumping = "T";
       break;
     case AUTO:
-      // if ((PressureValue < ZeroOffset - LOWERBOUNDERY) || (PressureValue > ZeroOffset + UPPERBOUNDERY)) {
-        if (PressureValue < ZeroOffset - LOWERBOUNDERY) {
+      if (PressureValue < ZeroOffset - LOWERBOUNDERY) {
         StartTime = millis();
         if (PumpIsRunning == false) {
           PumpIsRunning = true;
         }
       }
+      else {
+        Pumping = "U";
+      }
+
+    if (PumpIsRunning == true) {
+      if (StartTime + PUMPTIME > millis()) {
+        analogWrite(PUMP, analogRead(SPEEDPOT) >> 2);
+        Pumping = "T";
+      } else {
+        analogWrite(PUMP, 0);
+        PumpIsRunning = false;
+      }
+    }
       break;
     default:
       break;
   }
 
-  if (PumpIsRunning == true) {
-    if (StartTime + PUMPTIME > millis()) {
-      PumpPwm(analogRead(SPEEDPOT) >> 2);
-    }
-    else {
-      PumpPwm(0);
-      PumpIsRunning = false;
-    }
-  }
-
 }
-
-void PumpPwm(byte speed){
-  analogWrite(PUMP, speed);
-  if (speed==0){
-    Pumping="F";
-  }
-  else{
-    Pumping="T";
-  }
-}
-
-
 
 byte checkswitch() {
   if (digitalRead(SW_manual) == false) {
